@@ -427,7 +427,7 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .main-content p{
