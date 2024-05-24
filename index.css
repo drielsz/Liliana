@@ -464,3 +464,16 @@ h1 {
 .outp span {
     color: #FFD700;
 }
+
+.wrapper-image {
+    align-items: center;
+}
+
+.wrapper-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 80%;
+    background-size: contain; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
