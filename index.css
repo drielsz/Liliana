@@ -17,7 +17,10 @@
     -webkit-font-smoothing: antialiased;
     font-family: "Montserrat", sans-serif;
 }
-
+html {
+    
+    overflow: hidden;
+}
 .rounded-click-hamburguer {
     background-color: var(--border-color);
     border-radius: 50%;
@@ -419,8 +422,12 @@ h1 {
 }
 
 .main-content {
-    padding-top:  calc(var(--primary-padding)*2);
     text-align: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .main-content p{
