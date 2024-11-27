@@ -24,17 +24,18 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100dvh;
     background: linear-gradient(180deg, #CA7640 0%, #2F3035 100%);
 }
 
 .main-wrapper {
     width: 100%;
     height: 100%;
-    display: flex;
+    display:  inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 
 .top {
@@ -53,9 +54,8 @@ body {
 .top .description {
     color: #E1D3D1;
     text-align: center;
-    margin-top: calc(var(--margin-button)/2);
-    margin-bottom: calc(var(--margin-button)/1.5);
     font-size: 14px;
+    margin-bottom: 25px;
 }
 
 .profile {
@@ -84,11 +84,10 @@ body {
     border-radius: 25px;
     background-color: #F2E6C0;
     color: #5C2A13;
-    margin-bottom: var(--margin-button);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-bottom: 25px;
     /* Espaçamento entre o ícone e o texto */
     position: relative;
     cursor: pointer;
@@ -103,7 +102,6 @@ body {
 .social-links button p {
     text-align: center;
     margin: 0;
-    /* Remove margem do texto */
 }
 
 .social-links a img {
@@ -111,7 +109,6 @@ body {
     width: auto;
     position: absolute;
     left: 50px;
-    /* Ajuste conforme necessário */
     width: 30px;
     display: flex;
     align-items: center;
@@ -119,7 +116,7 @@ body {
 }
 
 .social-buttons {
-    width: 200px;
+    width: 210px;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -146,6 +143,25 @@ body {
     background-size: contain;
     opacity: 10%;
 }
+
+.location {
+    text-align: center;
+    color: white;
+}
+
+.location svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.location .local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 427px) {
     .main-wrapper {

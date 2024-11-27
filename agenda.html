@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Atendimento</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="agenda.css">
+</head>
+
+<body>
+    <main class="max-w mx-auto">
+        <div class="grid-x container">
+            <div class="questions">
+                <p>Olá! Sou a assistente virtual da Liliana Costa, especialista em design de sobrancelhas, e estou à
+                    disposição para auxiliar no agendamento de seus serviços profissionais.</p>
+            </div>
+
+            <div class="questions">
+                <p>Qual é o seu nome?</p>
+            </div>
+            <div id="horarios-container"></div>
+            
+            <form id="atendimentoForm" method="post">
+                <input type="text" id="cliente" name="cliente" placeholder="O seu nome" required>
+                <div>
+                    <button id="sendButton" type="submit">Enviar</button>
+                </div>
+
+
+                <div class="resposta grid-x">
+
+                    <div class="div-resposta-phrase">
+                        <p class="resposta-phrase"></p>
+                    </div>
+
+                    <div class="questions">
+                        <p class="resposta-question"></p>
+                    </div>
+                    <div class="questions">
+                        <p>Por qual serviço está procurando?</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Design Personalizado</p>
+                                    <input type="radio" value="Design Personalizado" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 20,00</p>
+                            </label>
+                        </div>
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Design + Henna</p>
+                                    <input type="radio" value="Design + Henna" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 45,00</p>
+                            </label>
+                        </div>
+
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Micropigmentação de sobrancelhas</p>
+                                    <input type="radio" value="Micropigmentação de sobrancelhas" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 350,00</p>
+                            </label>
+                        </div>
+
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Design + Henna + Buço</p>
+                                    <input type="radio" value="Design + Henna + Buço" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 50,00</p>
+                            </label>
+                        </div>
+
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Limpeza de pele</p>
+                                    <input type="radio" value="Limpeza de pele" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 99,90</p>
+                            </label>
+                        </div>
+
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Epilação Buço</p>
+                                    <input type="radio" value="Epilação Buço" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 10,00</p>
+                            </label>
+                        </div>
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Epilação Axila</p>
+                                    <input type="radio" value="Epilação Axila" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 20,00</p>
+                            </label>
+                        </div>
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Epilação Cantinho</p>
+                                    <input type="radio" value="Epilação Cantinho" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 50,00</p>
+                            </label>
+                        </div>
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Epilação Perna Completa</p>
+                                    <input type="radio" value="Epilação Perna Completa" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 45,00</p>
+                            </label>
+                        </div>
+                        <div class="cards-servicos">
+                            <label>
+                                <div class="row space-between">
+                                    <p class="name-servico">Epilação Meia Perna</p>
+                                    <input type="radio" value="Epilação Meia Perna" id="servico" name="servico">
+                                </div>
+                                <p class="price-servico">R$ 20,00</p>
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="div-resposta-phrase">
+                        <p class="resposta-phrase card-response"></p>
+                    </div>
+                </div>
+                <div class="container-last-response">
+                    <div id="calendar">
+                        <label>
+                            <input type="radio" name="data" id="data">
+                        </label>
+                    </div>
+                    <div id="time-slot">
+                        <label>
+                            <input type="radio" name="horario" id="horario" class="horario">
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </main>
+    <script src="index.js" defer></script>
+    <script src="calendar.js" defer></script>
+    <script src="agenda.js" defer></script>
+</body>
+
+</html>

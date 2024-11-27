@@ -1,0 +1,56 @@
+html {
+    height: 100dvh;
+    width: 100%;
+    background-color: #2F3035;
+}
+
+.max-w {
+    max-width: 70rem;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    flex-grow: 1;
+    flex-basis: 300px;
+    border: 1px solid white;
+}
+
+.box p  {
+    color: white;
+    text-align: center;
+}
+
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+}
+aside ul li {
+    list-style-type: none;
+}
+aside ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-right: 1px solid #FFFFFF21;
+    height: 100dvh;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
